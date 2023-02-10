@@ -11,12 +11,14 @@ word_list = ["aardvark", "baboon", "camel"]
 import random
 
 rand_num = random.randint(0,len(word_list) - 1)
+#Could also use random.choice() but for the sake of learning/understanding the functionalitly
+# behind random.choice() created my own way to get a random selection.
 
 #1
 chosen_word = word_list[rand_num]
 
 #2
-guess = input("Guess a letter in the word. ").lower()
+guess = input("Guess a letter in the word: ").lower()
 
 #3
 for letter in chosen_word:
